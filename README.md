@@ -3,9 +3,9 @@
 Code for simulated data generation and the way to get and use investigated algorithms for the study: Systematic comparison of rankingaggregation methods for gene lists inexperimental results.
 
 # Authors:
-- B Wang
-- Michael
-- JK Baillie
+- Bo Wang
+- Michael Gutmann
+- Kenneth Baillie
 
 # data generator
 A common experimental output in biomedical science is a list of genes implicated in a given biologicalprocess or disease. 
