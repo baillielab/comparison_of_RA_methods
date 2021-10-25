@@ -5,7 +5,7 @@ Code for simulated data generation and the way to get and use investigated algor
 # Authors:
 - Bo Wang
 - Michael Gutmann
-- Kenneth Baillie
+- J.Kenneth Baillie
 
 # data generator
 A common experimental output in biomedical science is a list of genes implicated in a given biologicalprocess or disease. 
@@ -26,12 +26,16 @@ include SARS-COV-2virus, cancer(NSCLC), and bacteria(macrophage apoptosis).
 
 The model ranks entities by figure Z for each entity generated from Gaussian distribution.
 For entity k in experiment(list) i,
-Z_ki ~ N (mu_k, sigma_i^2)
-log(sigma_i)~N(log(mean_noise_M), heterogeneity_D)
+
+<img src="https://render.githubusercontent.com/render/math?math=Z_{ki}\sim \N( {\mu}_{k},{\sigma}_{i}^{2} )">
+
+<img src="https://render.githubusercontent.com/render/math?math=\ln({\sigma}_{i} )\sim \N(\ln(M), D)">
+
+where M is the mean noise level and D is the heterogeneity of quality for sources.
+
 The length of each list is also sampled from specific distribution to emulating real datasets.
 
-The generated data are lists and will be written in a file with name "(mean_noise)_(heterogeneity_D)_(dataset_type(
-if unranked lists included)).txt"
+The generated data are lists and will be written in a file with name "(mean_noise M)\_(heterogeneity D)\_(dataset_type S).txt"
 
 Examples of running are shown at bottom of this file below "if __name__ == '__main__':" within data_generator.py
 
@@ -40,14 +44,14 @@ Files in the algorithms folder are for running existing methods, including the a
 rMixGEO, MixStuart are editted from R package:RobustRankAggregedited to include unranked lists.
 
 Investigated algorithms(where to get them):<br />
-1: MAIC: https://github.com/baillielab/maic. (not included here)<br />
-2: Vote Counting: vote_counting.py, mentioned in MAIC study by simply ranking entities by frequency.<br />
-3: RRA: use R package: RobustRankAggreg. Run RRA.R in this folder for running it.<br />
+1: MAIC: https://github.com/baillielab/maic. <br />
+2: Vote Counting: vote_counting.py, mentioned in MAIC study by simply ranking entities by frequency. (included here)<br />
+3: RRA: use R package: RobustRankAggreg. Run RRA.R in this folder for running it. <br />
 4: RepeatChoice: repeat_choice.py, implemented in this study.<br />
-5: BIRRA: (Badgeley et al., 2015) provided by author.<br />
+5: BIRRA: (Badgeley et al., 2015) provided by author and included here.<br />
 6-9: rMED, rMEAN, rGEO, stuart: use R package: RobustRankAggreg.<br />
-10-13: tMED, tMEAN, tGEO, tL2: R package:TopKLists.<br />
+10-13: tMED, tMEAN, tGEO, tL2: use R package:TopKLists.<br />
 14-17: rMixMED, rMixMEAN, rMixGEO, MixStuart: editted from R package:RobustRankAggregedited to include unranked lists.<br />
-18-19: BiGbottom, BiGNA:  (Li et al., 2018) provided by author.<br />
+18-19: BiGbottom, BiGNA:  (Li et al., 2018) provided by author and included here.<br />
 20-22: MC1-3: R package:TopKLists.<br />
 23: BARD: (Deng et al., 2014), provided by author. (not included here)
