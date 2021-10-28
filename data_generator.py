@@ -24,7 +24,7 @@ the common scenarios of real genomics data, with various heterogeneity of qualit
 ranked data using 20000 possible entities.  
 It is based on the analysis of real genomic data and the simulated data generation model in the study of MAIC algorithm 
 that samples a score from specific distribution for each entity to simulate the rankings. The investigated real data
-include SARS-COV-2virus, cancer(NSCLC), and bacteria(macrophage apoptosis).
+include SARS-COV-2 virus, cancer(NSCLC), and bacteria(macrophage apoptosis).
 
 The model ranks entities by figure Z for each entity generated from Gaussian distribution.
 For entity k in experiment(list) i,
@@ -545,5 +545,5 @@ if __name__ == '__main__':
     generator = SimulatedDataGenerator(directory='./simulated_data/')
     # -generate simulated data with various mean noise level and heterogeneity.
     generator.generate_multiple_simulated_data(repeat_times=3)
-    # -generate simulated data with various absent rate
+    # -generate simulated data with various absent rates
     generator.generate_multiple_simulated_data_with_absent_rates(repeat_times=[94, 100])
