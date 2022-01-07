@@ -4,8 +4,8 @@ Code for simulated data generation and the way to get and use investigated algor
 
 # Authors:
 - Bo Wang
-- Michael Gutmann
-- Kenneth Baillie
+- Michael U. Gutmann
+- J. Kenneth Baillie
 
 # data generator
 A common experimental output in biomedical science is a list of genes implicated in a given biologicalprocess or disease. 
