@@ -10,6 +10,6 @@ Investigated algorithms(where to get them):<br />
 6-9: rMED, rMEAN, rGEO, stuart: use R package: [RobustRankAggreg](https://CRAN.R-project.org/package=RobustRankAggreg).<br />
 10-13: tMED, tMEAN, tGEO, tL2: use R package:[TopKLists](https://CRAN.R-project.org/package=TopKLists).<br />
 14-17: rMixMED, rMixMEAN, rMixGEO, MixStuart: editted from R package:[RobustRankAggreg](https://CRAN.R-project.org/package=RobustRankAggreg) to accept unranked lists as input.<br />
-18-19: BiGbottom, BiGNA: [(Li et al., 2018)](https://doi.org/10.1002/sim.7920) coed: kindly provided by the authors and included here (./BiG_code_platform_changed.R).<br />
+18-19: BiGbottom, BiGNA: [(Li et al., 2018)](https://doi.org/10.1002/sim.7920) coed: kindly provided by the authors (https://github.com/xuelilyli/BiG) and also included here (./BiG_code_platform_changed.R).<br />
 20-22: MC1-3: R package: [TopKLists](https://CRAN.R-project.org/package=TopKLists).<br />
 23: BARD: [(Deng et al., 2014)](https://doi.org/10.1080/01621459.2013.878660), kindly provided by the authors. 
