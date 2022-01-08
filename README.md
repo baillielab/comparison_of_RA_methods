@@ -1,6 +1,6 @@
-# Systematic comparison of rankingaggregation methods for gene lists inexperimental results
+# Systematic comparison of ranking aggregation methods for gene lists in experimental results
 
-Code for simulated data generation and the way to get and use investigated algorithms for the study: Systematic comparison of rankingaggregation methods for gene lists inexperimental results.
+Code for simulated data generation and the way to get and use investigated algorithms for the study: Systematic comparison of ranking aggregation methods for gene lists in experimental results.
 
 # Authors:
 - Bo Wang
@@ -8,23 +8,10 @@ Code for simulated data generation and the way to get and use investigated algor
 - J. Kenneth Baillie
 
 # data generator
-A common experimental output in biomedical science is a list of genes implicated in a given biologicalprocess or disease. 
-The results of a group of studies answering the same, or similar, questions can becombined by meta-analysis, aiming at 
-finding a more reliable answer. 
-Ranking aggregation methods can be used to combine gene lists from various sources in meta-analyses. 
-Evaluating a ranking aggregationmethod on a specific type of dataset before using it can support the reliability of the 
-result since theproperty of a dataset can influence the performance of an algorithm. 
-Evaluation of aggregation methodsis usually based on a simulated database because of the lack of a known truth for real data. 
-Simulated datasets tend to be too small and neglect key features of experimental data, including heterogeneity ofquality, 
-relevance and the inclusion of unranked lists. 
-This script can generate simulated data to explore the performance of the aggregation methods as a function of emulating
-the common scenarios of real genomics data, with various heterogeneity of quality, noise level, and a mix of unranked and 
-ranked data using 20000 possible entities.  
-It is based on the analysis of real genomic data and the simulated data generation model in the study of MAIC algorithm 
-that samples a score from specific distribution for each entity to simulate the rankings. The investigated real data
-include SARS-COV-2 virus, cancer (NSCLC), and bacteria (macrophage apoptosis).
+A common experimental output in biomedical science is a list of genes implicated in a given biological process or disease. The results of a group of studies answering the same, or similar, questions can be combined by meta-analysis to find a consensus or a more reliable answer. Ranking aggregation methods can be used to combine gene lists from various sources in meta-analyses. Evaluating a ranking aggregation method on a specific type of dataset before using it is required to support the reliability of the result since the property of a dataset can influence the performance of an algorithm. Evaluation of aggregation methods is usually based on a simulated database especially for the algorithms designed for gene lists because of the lack of a known truth for real data. However, 
+simulated datasets tend to be too small compared to experimental data and neglect key features, including heterogeneity of quality, relevance and the inclusion of unranked lists. In this study, a group of existing methods and their variations which are suitable for meta-analysis of gene lists are compared using simulated and real data. Simulated data was used to explore the performance of the aggregation methods as a function of emulating the common scenarios of real genomics data, with various heterogeneity of quality, noise level, and a mix of unranked and ranked data using 20000 possible entities. In addition to the evaluation with simulated data, a comparison using real genomic data on the SARS-CoV-2 virus, cancer (NSCLC), and bacteria (macrophage apoptosis) was performed. We summarise our evaluation results in terms of a simple flowchart to select a ranking aggregation method for genomics data.
 
-The model ranks entities by figure Z for each entity generated from Gaussian distribution.
+The stochastic generative model in this study ranks entities by figure Z for each entity generated from Gaussian distribution.
 For entity k in experiment(list) i,
 
 <img src="https://render.githubusercontent.com/render/math?math=Z_{ki}\sim \N( {\mu}_{k},{\sigma}_{i}^{2} )">
