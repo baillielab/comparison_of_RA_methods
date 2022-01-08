@@ -12,13 +12,7 @@ A common experimental output in biomedical science is a list of genes implicated
 simulated datasets tend to be too small compared to experimental data and neglect key features, including heterogeneity of quality, relevance and the inclusion of unranked lists. In this study, a group of existing methods and their variations which are suitable for meta-analysis of gene lists are compared using simulated and real data. Simulated data was used to explore the performance of the aggregation methods as a function of emulating the common scenarios of real genomics data, with various heterogeneity of quality, noise level, and a mix of unranked and ranked data using 20000 possible entities. In addition to the evaluation with simulated data, a comparison using real genomic data on the SARS-CoV-2 virus, cancer (NSCLC), and bacteria (macrophage apoptosis) was performed. We summarise our evaluation results in terms of a simple flowchart to select a ranking aggregation method for genomics data.
 
 The stochastic generative model in this study ranks entities by figure Z for each entity generated from Gaussian distribution.
-For entity k in experiment(list) i, a score Z_ki is sampled from a normal distribution given a list specified precision which is also sampled depending on parameters M (ean noise level) and D (heterogeneity of quality for sources).
-
-<img src="https://render.githubusercontent.com/render/math?math=Z_{ki}\sim \N( {\mu}_{k},{\sigma}_{i}^{2} )">
-
-<img src="https://render.githubusercontent.com/render/math?math=\ln({\sigma}_{i} )\sim \N(\ln(M), D)">
-
-The length of each list is also sampled from specific distribution to emulating real datasets.
+For entity k in experiment(list) i, a score Z_ki is sampled from a normal distribution given a list specified precision which is also sampled depending on parameters M (ean noise level) and D (heterogeneity of quality for sources). The length of each list is also sampled from specific distribution to emulating real datasets.
 
 The generated data are lists and will be written in a file with name "(mean_noise M)\_(heterogeneity D)\_(dataset_type S).txt"
 
