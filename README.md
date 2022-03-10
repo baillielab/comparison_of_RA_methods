@@ -5,7 +5,7 @@ Supplement files 2-8 for the manusctipt are available here at "./Supplement file
 
 - Supplement file 1: The exploration for parameter settings of the stochastic generative model, the selection and implementation details for investigated ranking aggregation methods, some result figures of the evaluation and a detailed flowchart for the methods selection.
 
-- Supplement file 2: "2\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about M and D.
+- Supplement file 2: "2\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about M (mean noise) and D (heterogeneity).
 
 - Supplement file 3: "3\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate, plotted as figure 6 in Supplement file 1. The mean value of 100 repeated experiments is recorded.  
 
