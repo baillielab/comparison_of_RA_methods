@@ -5,17 +5,17 @@ Supplement files 2-8 for the manusctipt are available here at "./Supplement file
 
 - Supplement file 1: The exploration for parameter settings of the stochastic generative model, the selection and implementation details for investigated ranking aggregation methods, some result figures of the evaluation and a detailed flowchart for the methods selection.
 
-- Supplement file 2: "2\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about $M$ and $D$.
+- Supplement file 2: "2\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about M and D.
 
-- Supplement file 3: "3\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate $\gamma$, plotted as figure 6 in Supplement file 1. The mean value of 100 repeated experiments is recorded.  
+- Supplement file 3: "3\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate, plotted as figure 6 in Supplement file 1. The mean value of 100 repeated experiments is recorded.  
 
-- Supplement file 4: "4\_top-100 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including $M\in\{1,3,4\}$ for $D\in\{0.1, 0.5, 1, 3, 12\}$. Results for 100 repeated experiments are included.
+- Supplement file 4: "4\_top-100 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
 
-- Supplement file 5: "5\_top-100 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including $D\in\{0.1,0.5,1,3\}$ for $M\in\{0.5, 1, 3, 4, 12\}$. Results for 100 repeated experiments are included.
+- Supplement file 5: "5\_top-100 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including D in \{0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
 
-- Supplement file 6: "6\_top-1000 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including $M\in\{1,3,4\}$ for $D\in\{0.1, 0.5, 1, 3, 12\}$. Results for 100 repeated experiments are included.
+- Supplement file 6: "6\_top-1000 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
 
-- Supplement file 7: "7\_top-1000 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including $D\in\{0.1,0.5,1,3\}$ for $M\in\{0.5, 1, 3, 4, 12\}$. Results for 100 repeated experiments are included.
+- Supplement file 7: "7\_top-1000 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including D in {0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
 
 - Supplement file 8: "8\_encoded\_lists.zip" Encoded collected real lists and the encoded gold standard used in the evaluation.
 
@@ -29,7 +29,7 @@ A common experimental output in biomedical science is a list of genes implicated
 simulated datasets tend to be too small compared to experimental data and neglect key features, including heterogeneity of quality, relevance and the inclusion of unranked lists. In this study, a group of existing methods and their variations which are suitable for meta-analysis of gene lists are compared using simulated and real data. Simulated data was used to explore the performance of the aggregation methods as a function of emulating the common scenarios of real genomics data, with various heterogeneity of quality, noise level, and a mix of unranked and ranked data using 20000 possible entities. In addition to the evaluation with simulated data, a comparison using real genomic data on the SARS-CoV-2 virus, cancer (NSCLC), and bacteria (macrophage apoptosis) was performed. We summarise our evaluation results in terms of a simple flowchart to select a ranking aggregation method for genomics data.
 
 The stochastic generative model in this study ranks entities by figure Z for each entity generated from Gaussian distribution.
-For entity k in experiment(list) i, a score Z_ki is sampled from a normal distribution given a list specified precision which is also sampled depending on parameters M (ean noise level) and D (heterogeneity of quality for sources). The length of each list is also sampled from specific distribution to emulating real datasets.
+For entity k in experiment(list) i, a score Z_ki is sampled from a normal distribution given a list specified precision which is also sampled depending on parameters M (mean noise level) and D (heterogeneity of quality for sources). The length of each list is also sampled from specific distribution to emulating real datasets.
 
 The generated data are lists and will be written in a file with name "(mean_noise M)\_(heterogeneity D)\_(dataset_type S).txt"
 
