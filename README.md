@@ -25,6 +25,8 @@ Supplement files 2-8 for the manusctipt are available here at "./Supplement file
 - J. Kenneth Baillie
 
 # data generator
+data_generator.py
+
 A common experimental output in biomedical science is a list of genes implicated in a given biological process or disease. The results of a group of studies answering the same, or similar, questions can be combined by meta-analysis to find a consensus or a more reliable answer. Ranking aggregation methods can be used to combine gene lists from various sources in meta-analyses. Evaluating a ranking aggregation method on a specific type of dataset before using it is required to support the reliability of the result since the property of a dataset can influence the performance of an algorithm. Evaluation of aggregation methods is usually based on a simulated database especially for the algorithms designed for gene lists because of the lack of a known truth for real data. However, 
 simulated datasets tend to be too small compared to experimental data and neglect key features, including heterogeneity of quality, relevance and the inclusion of unranked lists. In this study, a group of existing methods and their variations which are suitable for meta-analysis of gene lists are compared using simulated and real data. Simulated data was used to explore the performance of the aggregation methods as a function of emulating the common scenarios of real genomics data, with various heterogeneity of quality, noise level, and a mix of unranked and ranked data using 20000 possible entities. In addition to the evaluation with simulated data, a comparison using real genomic data on the SARS-CoV-2 virus, cancer (NSCLC), and bacteria (macrophage apoptosis) was performed. We summarise our evaluation results in terms of a simple flowchart to select a ranking aggregation method for genomics data.
 
@@ -33,7 +35,7 @@ For entity k in experiment(list) i, a score Z_ki is sampled from a normal distri
 
 The generated data are lists and will be written in a file with name "(mean_noise M)\_(heterogeneity D)\_(dataset_type S).txt"
 
-Examples of running are shown at bottom of this file below "if __name__ == '__main__':" within data_generator.py
+Examples of running are shown at bottom of this file (data_generator.py) below "if __name__ == '__main__':" .
 
 # ranking aggregation algorithms
 Files in the algorithms folder are for running existing methods, including the algorithm itself, scripts to control the running of each algorithm, where small scripts within ./algorithms for existing algorithms BIRRA and BiG are provided by related authors. Only RepeatChoice and VC (Vote Counting) are newly implemented following the description of related papers. rMixMED, rMixMEAN,
