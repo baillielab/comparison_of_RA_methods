@@ -3,7 +3,7 @@
 Code for simulated data generation and the way to get and use investigated algorithms are available here for the study: Systematic comparison of ranking aggregation methods for gene lists in experimental results.
 Supporting data 1-7 for the manusctipt are available here at "./Supporting data 1-7 /", whereas the "Supplementary file 1.pdf" is available online together with the manuscript.
 
-- Supplementary file 1: The exploration for parameter settings of the stochastic generative model, the selection and implementation details for investigated ranking aggregation methods, some result figures of the evaluation and a detailed flowchart for the methods selection.
+- Supplementary file 1: The description for real data collection, the exploration for parameter settings of the stochastic generative model, the selection and implementation details for investigated ranking aggregation methods, some result figures of the evaluation and a detailed flowchart for the methods selection.
 
 - Supporting data 1: "1\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about M (mean noise) and D (heterogeneity).
 
