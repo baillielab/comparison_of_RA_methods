@@ -7,7 +7,7 @@ Supporting data 1-7 for the manusctipt are available here at "./Supporting data 
 
 - Supporting data 1: "1\_accuracy\_M\_D\_initial\_explore.csv" Result table for exploring simulation parameters about M (mean noise) and D (heterogeneity).
 
-- Supporting data 2: "2\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate, plotted as figure 6 in Supplementary file 1. The mean value of 100 repeated experiments is recorded.  
+- Supporting data 2: "2\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate, plotted as Figure 6 in Supplementary file 1. The mean value of 100 repeated experiments is recorded.  
 
 - Supporting data 3: "3\_top-100 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
 
