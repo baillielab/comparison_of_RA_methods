@@ -9,13 +9,13 @@ Supporting data 1-7 for the manusctipt are available here at "./Supporting data 
 
 - Supporting data 2: "2\_accuracy-C\_plot\_D\_gamma\_average.csv" Result for evaluation on simulated data with various cutoffs of result and absent gene rate, plotted as Figure 6 in Supplementary file 1. The mean value of 100 repeated experiments is recorded.  
 
-- Supporting data 3: "3\_top-100 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
+- Supporting data 3: "3\_top-100 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 18 methods and their typical variations. Accuracy with 100 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
 
-- Supporting data 4: "4\_top-100 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 100 cutoff for the evaluation of datasets including D in \{0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
+- Supporting data 4: "4\_top-100 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 18 methods and their typical variations. Accuracy with 100 cutoff for the evaluation of datasets including D in \{0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
 
-- Supporting data 5: "5\_top-1000 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
+- Supporting data 5: "5\_top-1000 accuracy-M\_plot\_D\_all.csv" Result for evaluation on simulated data for 18 methods and their typical variations. Accuracy with 1000 cutoff for the evaluation of datasets including M in \{1,3,4\} for D in \{0.1, 0.5, 1, 3, 12\}. Results for 100 repeated experiments are included.
 
-- Supporting data 6: "6\_top-1000 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 23 methods and variations. Accuracy with 1000 cutoff for the evaluation of datasets including D in {0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
+- Supporting data 6: "6\_top-1000 accuracy-D\_plot\_M\_all.csv" Result for evaluation on simulated data for 18 methods and their typical variations. Accuracy with 1000 cutoff for the evaluation of datasets including D in {0.1,0.5,1,3\} for M in \{0.5, 1, 3, 4, 12\}. Results for 100 repeated experiments are included.
 
 - Supporting data 7: "7\_encoded\_lists.zip" Encoded collected real lists and the encoded gold standard used in the evaluation.
 
